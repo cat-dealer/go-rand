@@ -2,7 +2,7 @@
 
 A painless convenience wrapper around math/rand and crypto/rand
 
-Ínstallation: `go get github.com/cat-dealer/go-rand`
+Installation: `go get github.com/cat-dealer/go-rand`
 
 Full documentation: [godoc](https://godoc.org/github.com/cat-dealer/go-rand)
 
