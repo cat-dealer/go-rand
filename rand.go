@@ -108,6 +108,7 @@ func SecureString(length int, pool []rune) (string, error){
 			return "", err;
 		}
 		out = append(out, randRune);
+		i++;
 	}
 	return string(out), nil;
 }
