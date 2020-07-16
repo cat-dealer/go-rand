@@ -2,9 +2,9 @@
 
 A painless convenience wrapper around math/rand and crypto/rand
 
-Installation: `go get github.com/cat-dealer/go-rand`
+Installation: `go get github.com/cat-dealer/go-rand/v2`
 
-Full documentation: [godoc](https://godoc.org/github.com/cat-dealer/go-rand)
+Full documentation: [godoc](https://godoc.org/github.com/cat-dealer/go-rand/v2)
 
 
 ## Examples
@@ -27,7 +27,7 @@ can either provide your own pool:
 
 or use one of the built-in pools:
 
-`str := rand.String(4, rand.AlphanumericPool) // returns 4 letters or numbers`
+`str := rand.String(4, rand.GetAlphanumericPool()) // returns 4 letters or numbers`
 
 
 #### Cryptographically random
@@ -42,7 +42,7 @@ bool, err  := rand.SecureBool()    // returns true or false
 
 Strings are just as easy:
 
-`str, err := rand.SecureString(4, rand.AlphanumericPool) // returns 4 letters or numbers`
+`str, err := rand.SecureString(4, rand.GetAlphanumericPool()) // returns 4 letters or numbers`
 
 ### Important note
 
@@ -50,5 +50,4 @@ This package may panic if called with impossible parameters (e.g. `rand.Int(0, -
 
 ### Licensing
 
-None. Do whatever you want with it.
-This software distribution has no copyright or conditions.
+[The Unlicense](https://unlicense.org)
